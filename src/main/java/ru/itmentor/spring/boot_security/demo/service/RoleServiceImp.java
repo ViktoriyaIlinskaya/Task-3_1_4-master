@@ -20,7 +20,7 @@ public class RoleServiceImp implements RoleService {
         this.roleRepository = roleRepository;
     }
 
-    @Transactional(readOnly = true)
+   
     @Override
     public List<Role> getAllRole() {
         return roleRepository.findAll();
